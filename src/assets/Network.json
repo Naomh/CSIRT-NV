@@ -1,0 +1,69 @@
+{
+"network":[
+  {
+    "id": "F",
+    "Type": "end-device-clear",
+    "connections":[]
+},
+{
+    "id": "C",
+    "Type": "router-firewall-clear",
+    "connections":["G","H","I"],
+    "services":[{"name":"service1", "owner":"root"},{"name":"service2", "owner":"root"}]
+},
+{
+    "id": "A",
+    "Type": "router-firewall-clear",
+    "connections":["B","C","J"]
+},
+{
+    "id": "B",
+    "Type": "router-clear",
+    "connections":["D","E","F"]
+},
+{
+    "id": "D",
+    "Type": "end-device-firewall-clear",
+    "connections":[]
+},
+{
+    "id": "E",
+    "Type": "end-device-clear",
+    "connections":[]
+},
+{
+    "id": "G",
+    "Type": "end-device-fraud",
+    "connections":[]
+},
+{
+    "id": "H",
+    "Type": "end-device-firewall-fraud",
+    "connections":[]
+},
+{
+    "id": "I",
+    "Type": "end-device-clear",
+    "connections":[]
+},
+{
+  "id": "J",
+  "Type": "end-device-clear",
+  "connections":["K","L","M"]
+},
+{
+  "id": "K",
+  "Type": "end-device-clear",
+  "connections":[]
+},
+{
+  "id": "L",
+  "Type": "end-device-clear",
+  "connections":[]
+},
+{
+  "id": "M",
+  "Type": "end-device-clear",
+  "connections":[]
+}
+]}
